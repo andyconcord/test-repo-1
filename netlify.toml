@@ -1,0 +1,37 @@
+# concordvisas.com — Google Ads landing pages (one folder per LP)
+
+[[redirects]]
+  from = "/"
+  to = "/au/482-visa-requirements/"
+  status = 302
+
+# Immutable caching for every LP's hashed assets (matches /<country>/<page>/assets/*)
+[[headers]]
+  for = "/au/482-visa-requirements/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/ca/work-permit-extension/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/au/migration-agents/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/ca/immigration-consultants/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/au/become-a-sponsor/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/au/become-a-sponsor/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
